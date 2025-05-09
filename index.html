@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Felipe Evangelista e Silva - Portfólio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ffd5;
+    }
+    header h2 {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-top: 0.5rem;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h3 {
+      color: #00ffd5;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.25rem;
+    }
+    code, pre {
+      background-color: #1e1e1e;
+      padding: 1rem;
+      display: block;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: #b5f4ec;
+    }
+    footer {
+      background-color: #1f1f1f;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Felipe Evangelista e Silva</h1>
+    <h2>Investidor Socioeconômico & Programador em Python</h2>
+  </header>
+
+  <section>
+    <h3>Sobre Mim</h3>
+    <p>Felipe evangelista e silva, 17</p>
+    <p>Formação: Bacharelado em Engenharia de Software pela Uniceub</p>
+  </section>
+
+  <section>
+    <h3>Currículo</h3>
+    <ul>
+      <li>Investidor socioeconômico no período de 2020-2022, com faturamento de +R$11.000 fazendo investimentos na conversão euro/dólar pela IQ Option.</li>
+      <li>Analista de tabelas da bolsa de valores com remanejamento da taxa SELIC com 2 anos de experiência.</li>
+      <li>Programador em Python desde 2025, atualmente cursando Engenharia de Software pela Uniceub, com cursos de especialização pela Udemy.</li>
+      <li>Inglês intermediário, com cursos pela Coplem Idiomas e Wizard.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Projetos em Python</h3>
+    <p><strong>Calculadora de Descontos:</strong></p>
+    <pre><code>preco = float(input("Digite o preço original do produto: R$ "))
+desconto = float(input("Digite o percentual de desconto (%): "))
+valor_desconto = preco * (desconto / 100)
+preco_final = preco - valor_desconto
+print(f"Valor do desconto: R$ {valor_desconto:.2f}")
+print(f"Preço com desconto: R$ {preco_final:.2f}")</code></pre>
+
+    <p><strong>Gerador de Senhas Seguras:</strong></p>
+    <pre><code>import random
+import string
+tamanho = int(input("Tamanho da senha: "))
+caracteres = string.ascii_letters + string.digits + string.punctuation
+senha = ''.join(random.choice(caracteres) for _ in range(tamanho))
+print(f"Senha gerada: {senha}")</code></pre>
+
+    <p><strong>Conversor de Moeda (Real/Dólar/Euro):</strong></p>
+    <pre><code>real = float(input("Valor em reais: R$ "))
+dolar = real / 5.0
+euro = real / 5.4
+print(f"Em dólar: US$ {dolar:.2f}")
+print(f"Em euro: € {euro:.2f}")</code></pre>
+  </section>
+
+  <section>
+    <h3>Contato</h3>
+    <p>Email: <a href="mailto:felipesilvanj07@gmail.com">felipesilvanj07@gmail.com</a></p>
+    <p>Telefone: (61) 98197-9798</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Felipe Evangelista e Silva. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
